@@ -1,0 +1,13 @@
+<div class="" ng-init="ctrl.getPosts()">
+  <div class="post" ng-repeat="post in ctrl.posts" >
+    <a href="#!posts/{{ post.id }}" ng-click="ctrl.setPost(post)" class="list-group-item list-group-item-action">
+      <div class="d-flex w-100 justify-content-between">
+        <h5 class="mb-1">{{ post.title }}</h5>
+        <small>{{ post.id }}</small>
+      </div>
+      <p class="mb-1">{{ post.body }}</p>
+    </a>
+    <br />
+  </div>
+</div>
+

@@ -1,0 +1,12 @@
+<form ng-submit="ctrl.createPost()">
+  <h4>Create a post</h4>
+  <div class="form-group">
+    <label for="exampleFormControlInput1">Title</label>
+    <input ng-model="ctrl.post.title" type="text" class="form-control" id="exampleFormControlInput1" required>
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlTextarea1">Body</label>
+    <textarea ng-model="ctrl.post.body" class="form-control" id="exampleFormControlTextarea1" rows="5" required></textarea>
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>

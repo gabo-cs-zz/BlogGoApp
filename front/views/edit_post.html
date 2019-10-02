@@ -1,0 +1,20 @@
+<form ng-submit="ctrl.editPost()">
+    <h4>Edit a post</h4>
+    <div class="form-group">
+      <label for="exampleFormControlInput1">Title</label>
+      <input ng-model="ctrl.postToEdit.title" type="text" class="form-control" id="exampleFormControlInput1" required
+required>
+    </div>
+    <div class="form-group">
+      <label for="exampleFormControlTextarea1">Body</label>
+      <textarea ng-model="ctrl.postToEdit.body" class="form-control" id="exampleFormControlTextarea1" rows="5" required
+required></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">Save changes</button>
+  </form><br/>
+  
+  <form id="danger-section" class="mb-3" ng-confirm-click="Are you sure to delete this record ?" confirmed-click="ctrl.deletePost()">
+    <p>Or you may want to..</p>
+    <button type="submit" class="btn btn-danger">Delete this post</button>
+  </form>
+  
